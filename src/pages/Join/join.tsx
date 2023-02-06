@@ -1,41 +1,23 @@
 import React from "react";
-import {
-  Button,
-  Form,
-  Grid,
-  Header,
-  Segment,
-} from "semantic-ui-react";
+import { Button, Form, Grid, Header, Segment } from "semantic-ui-react";
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () => (
-  <Grid centered columns={2}>
+/* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
+const Join = () => (
+  <Grid centered columns={2} stackable>
     <Grid.Column>
-      <Header as="h2" textAlign="center">
+      <Header as="h2" textAlign="center" verticalAlign="middle">
         Join the fun
       </Header>
-      <Segment>
+    </Grid.Column>
+    <Grid.Column>
+      <Segment verticalAlign="middle">
         <Form size="large">
-            <Form.Input
-              fluid
-              icon="lock"
-              iconPosition="left"
-              placeholder="Name:"
-              type="password"
-            />
-          <Form.Input
-            fluid
-            icon="user"
-            iconPosition="left"
-            placeholder="Email:"
-          />
-          <Form.Input
-            fluid
-            icon="lock"
-            iconPosition="left"
-            placeholder="Password:"
-            type="password"
-          />
+          <label>Name:</label>
+          <Form.Input />
+          <label>Email::</label>
+          <Form.Input />
+          <label>Password</label>
+          <Form.Input />
 
           <Button color="blue" fluid size="large">
             Join now
@@ -45,3 +27,5 @@ export default () => (
     </Grid.Column>
   </Grid>
 );
+
+export default Join

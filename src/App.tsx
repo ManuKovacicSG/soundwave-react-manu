@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Container } from 'semantic-ui-react';
-import Login from './pages/Join/join';
+import Join from './pages/Join/Join';
+import HomePage from './pages/Home/Home'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <div className="App">
-      
+      <Container>
+        <Navbar />
+        </Container>
+
+    <Container>
+      <HomePage />
+      </Container>  
 
       <Container>
-    <Login />
+    <Join />
   </Container>
 
     </div>
