@@ -6,6 +6,7 @@ import Discover from './pages/Discover/Discover'
 import Navigation from './components/Navigation'
 import Layout from './components/Layout'
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
     <Route path="/join" element={<Join/>} />
     </Route>
     </Routes>
+    
     </>
+    
 
   );
 }
