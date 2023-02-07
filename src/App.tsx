@@ -1,26 +1,25 @@
 import React from 'react';
 import './App.css';
-import { Container } from 'semantic-ui-react';
 import Join from './pages/Join/Join';
-import HomePage from './pages/Home/Home'
-import Navbar from './components/Navbar'
+import HomePage from './pages/Home/Home';
+import Discover from './pages/Discover/Discover'
+import Navigation from './components/Navigation'
+import Layout from './components/Layout'
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Container>
-        <Navbar />
-        </Container>
+    <>
+    <Routes>
+      <Route element={<Layout/>}>
+    <Route path="/soundwave" element={<HomePage/>} />
+    <Route path="/discover" element={<Discover/>} />
+    <Route path="/join" element={<Join/>} />
+    </Route>
+    </Routes>
+    </>
 
-    <Container>
-      <HomePage />
-      </Container>  
-
-      <Container>
-    <Join />
-  </Container>
-
-    </div>
   );
 }
 
