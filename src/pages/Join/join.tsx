@@ -5,7 +5,7 @@ import Footer from "../../components/Footer"
 
 /* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 const Join = () => (
-  <section>
+  <section id='fonts'>
   <Grid centered columns={2} stackable>
     <Grid.Column>
       <Header as="h2" textAlign="center" verticalAlign="middle">

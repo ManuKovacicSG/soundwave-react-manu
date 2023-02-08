@@ -11,7 +11,7 @@ export default class Footer extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Segment inverted>
+      <Segment inverted id='fonts' >
         <Menu inverted secondary>
           <Menu.Item
             name="About Us"

@@ -6,10 +6,10 @@ import LoginButtonNav from "../../components/Join-button";
 /* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 const HomePage = () => {
   return (
-    <section>
+    <section id='fonts' >
       <Image src={"image-guila.png"} size="small" />
-      <h1>Feel The Music</h1>
-      <p>Stream over 20 thousand songs with one click</p>
+      <h1 id='fonts' >Feel The Music</h1>
+      <p id='fonts'>Stream over 20 thousand songs with one click</p>
       <LoginButtonNav />
     </section>
   );

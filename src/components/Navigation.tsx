@@ -10,7 +10,7 @@ const Navigation = () =>{
         setActiveItem('')
     }
     return (
-        <Menu secondary fluid>
+        <Menu secondary fluid id='fonts'>
                 
                 <Image src='' />
                 <Image src={'logo-soundwave.png'} width='60' floated='left' verticalAlign='middle'/>
