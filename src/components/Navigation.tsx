@@ -1,8 +1,55 @@
-import React, { Component } from 'react'
+import { useState } from 'react'
 import { Menu, Image } from 'semantic-ui-react'
 import {Link} from "react-router-dom";
 
 const Navigation = () =>{
+    
+    const [activeItem, setActiveItem] = useState('')
+    
+    const handleClick = (e:any, { name }:any ) => {
+        setActiveItem('')
+    }
+    return (
+        <Menu secondary fluid>
+                
+                <Image src='' />
+                <Image src={'logo-soundwave.png'} width='60' floated='left' verticalAlign='middle'/>
+                
+                <Menu.Item
+                    as={Link} to="/soundwave"
+                    name='SoundWave'
+                    active={activeItem === 'soundwave'}
+                    onClick={handleClick}>
+                    SoundWave
+                </Menu.Item>
+               <Menu.Item
+                position='right'
+                    as={Link} to="/discover"
+                    name='Discover'
+                    active={activeItem === 'discover'}
+                    onClick={handleClick}>
+                    Discover
+                </Menu.Item>
+                <Menu.Item
+                    as={Link} to="/join"
+                    name='Join'
+                    active={activeItem === 'join'}
+                    onClick={handleClick}>
+                    Join
+                </Menu.Item>
+        
+                </Menu>
+    )
+}
+
+export default Navigation
+
+
+
+
+
+
+/* const Navigation = () =>{
     
     return (
         <Menu secondary fluid>
@@ -19,4 +66,4 @@ const Navigation = () =>{
     )
 }
 
-export default Navigation
+export default Navigation */

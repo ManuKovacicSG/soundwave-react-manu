@@ -10,9 +10,6 @@ const HomePage = () => {
       <Image src={"image-guila.png"} size="small" />
       <h1>Feel The Music</h1>
       <p>Stream over 20 thousand songs with one click</p>
-      {/* <Button color="blue" fluid size="tiny" >
-        Join Now
-      </Button> */}
       <LoginButtonNav />
     </section>
   );
