@@ -12,7 +12,7 @@ export default class Footer extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Segment inverted >
+      <Segment inverted className="elfooter">
         <Menu inverted secondary >
           <Menu.Item 
             name="About Us"

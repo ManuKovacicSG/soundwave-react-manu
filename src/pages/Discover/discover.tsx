@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Image } from "semantic-ui-react";
+import { Container, Grid, Image } from "semantic-ui-react";
 import Footer from "../../components/Footer"
 
 type Props = {};
@@ -7,21 +7,22 @@ type Props = {};
 const Discover = (props: Props) => {
   return (
     <section>
+      <Container>
       <Grid divided="vertically" stackable>
         <Grid.Row columns={2}>
           <Grid.Column>
 
-            <h1>Discover new music</h1>
+            <h1 style={{ color: "white" }}>Discover new music</h1>
             <img src={"microphone.svg"} alt="microphone" />
-            <p>Charts</p>
+            <p style={{ color: "white" }}>Charts</p>
 
             <img src={"albums.svg"} alt="microphone" />
-            <p>Albums</p>
+            <p style={{ color: "white" }}>Albums</p>
 
             <img src={"more.svg"} alt="microphone" />
-            <p>More</p>
+            <p style={{ color: "white" }}>More</p>
 
-            <p>
+            <p style={{ color: "white" }}>
               By joining you can benefit by listening to the latest albums
               released.
             </p>
@@ -36,6 +37,7 @@ const Discover = (props: Props) => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      </Container>
       <Footer />
     </section>
 
