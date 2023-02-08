@@ -1,0 +1,8 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+
+@pageBackground: #2f303a;
+@button      : #1762A7;
+@fontName: Poppins;

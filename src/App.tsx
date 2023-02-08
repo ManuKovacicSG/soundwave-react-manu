@@ -5,6 +5,7 @@ import HomePage from "./pages/Home/Home";
 import Discover from "./pages/Discover/Discover";
 import Layout from "./components/Layout";
 import { Route, Routes } from "react-router-dom";
+import './index.css'
 
 function App() {
   return (

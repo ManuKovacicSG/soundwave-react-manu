@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Menu, Image } from 'semantic-ui-react'
+import { Menu, Image, Container } from 'semantic-ui-react'
 import {Link} from "react-router-dom";
+import '../index.css'
 
 const Navigation = () =>{
     
@@ -10,7 +11,8 @@ const Navigation = () =>{
         setActiveItem('')
     }
     return (
-        <Menu secondary fluid id='fonts'>
+        <Container >
+        <Menu secondary fluid id='fonts' className='navigator' >
                 
                 <Image src='' />
                 <Image src={'logo-soundwave.png'} width='60' floated='left' verticalAlign='middle'/>
@@ -39,31 +41,8 @@ const Navigation = () =>{
                 </Menu.Item>
         
                 </Menu>
+                </Container>
     )
 }
 
 export default Navigation
-
-
-
-
-
-
-/* const Navigation = () =>{
-    
-    return (
-        <Menu secondary fluid>
-        <Menu.Item
-        name='SoundWave'
-        icon={'logo-soundwave.png'} />
-        <Image src={'logo-soundwave.png'} size={'mini'} floated='left' />
-        <Link to ='/soundwave'>SoundWave</Link>
-
-        <Link to ='/discover'>Discover</Link>
-        
-        <Link to ='/join'>Join</Link>
-        </Menu>
-    )
-}
-
-export default Navigation */

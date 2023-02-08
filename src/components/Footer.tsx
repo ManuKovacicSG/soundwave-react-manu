@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Menu, Segment } from "semantic-ui-react";
+import '../index.css'
 
 export default class Footer extends Component {
   state = { activeItem: "home" };
@@ -11,9 +12,9 @@ export default class Footer extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Segment inverted id='fonts' >
-        <Menu inverted secondary>
-          <Menu.Item
+      <Segment inverted >
+        <Menu inverted secondary >
+          <Menu.Item 
             name="About Us"
             active={activeItem === "home"}
             onClick={this.handleItemClick}
