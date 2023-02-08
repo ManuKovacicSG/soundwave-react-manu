@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Image, Button } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 import LoginButtonNav from "../../components/Join-button";
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Image, Label } from "semantic-ui-react";
+import { Grid, Image } from "semantic-ui-react";
 import Footer from "../../components/Footer"
 
 type Props = {};

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, Grid, Header, Segment } from "semantic-ui-react";
+import { Form, Grid, Header, Segment } from "semantic-ui-react";
 import LoginButtonNav from "../../components/Join-button";
 import Footer from "../../components/Footer"
 
