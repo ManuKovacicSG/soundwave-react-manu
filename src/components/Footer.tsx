@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Menu, Segment } from "semantic-ui-react";
-import '../index.css'
+
 
 export default class Footer extends Component {
   state = { activeItem: "home" };

@@ -6,3 +6,4 @@
 @pageBackground: #2f303a;
 @button      : #1762A7;
 @fontName: Poppins;
+@FormInput: '#202027';

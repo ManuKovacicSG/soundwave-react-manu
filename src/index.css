@@ -13,11 +13,6 @@ body #fonts {
   color: antiquewhite;
 }
 
-/* .homepage{
-    font-family: 'Poppins';
-    font-size: 1.2 rem;
-  }
-     */
 
 .navigator {
   background-color: aqua;
@@ -28,25 +23,25 @@ code {
 }
 
 form {
+  align-self: center;
   width: 50%;
   min-width: fit-content;
   padding: 40px;
   border-radius: 10px;
 }
-.Footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: fit-content;
+
+.joinbutton{
+  font-family: 'Poppins';
+  font-size: 1.2 rem;
+  color: antiquewhite;
 }
 
-.elfooter{
-  position: relative;
-  min-height: 100vh;
+.forminput{
+  background-color: "#202027";
+  border-color: '#2E3852';
 }
+
 
 .discover {
-  background-color: rgba(229, 255, 0, 0.404);
-  padding: 1.5rem 2rem 35px 2rem;
-  min-height: 100%;
+    min-height: 100%;
 }
