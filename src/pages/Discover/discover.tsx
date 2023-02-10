@@ -14,21 +14,21 @@ const Discover = (props: Props) => {
               <Container  >
               <Grid.Row columns={3}>
              
-                <h1 style={{ color: "white" }}>Discover new music</h1>
+                <h1 id='fonts'>Discover new music</h1>
                 
-                <img src={"microphone.svg"} alt="microphone" style={{ background: '#202027' }} />
-                <p style={{ color: "white" }}>Charts</p>
+                <img src={"microphone.svg"} alt="microphone" />
+                <p id='fonts'>Charts</p>
                 
                 <img src={"albums.svg"} alt="microphone" />
-                <p style={{ color: "white" }}>Albums</p>
+                <p id='fonts'>Albums</p>
               
                 
 
                 <img src={"more.svg"} alt="microphone" />
-                <p style={{ color: "white" }}>More</p>
+                <p id='fonts'>More</p>
                 </Grid.Row>
 
-                <p style={{ color: "white" }}>
+                <p id='fonts' >
                   By joining you can benefit by listening to the latest albums
                   released.
                 </p>

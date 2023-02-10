@@ -12,8 +12,8 @@ export default class Footer extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Segment inverted className="elfooter">
-        <Menu inverted secondary >
+      <Segment inverted className="elfooter" style={{position: "relative"}}>
+        <Menu inverted secondary  >
           <Menu.Item 
             name="About Us"
             active={activeItem === "home"}
